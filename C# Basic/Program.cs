@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using static System.Console;
 
 
@@ -9,7 +10,7 @@ namespace C__Basic
         static void Main(string[] args)
         {
             C_sharp_Basic c = new C_sharp_Basic();
-            c.lesson1();
+            c.lesson8();
         }
     }
     public class C_sharp_Basic
@@ -20,7 +21,7 @@ namespace C__Basic
             // A developer platform for building all your apps.
             WriteLine("Hello World");
         }
-        public void lesson2()//Data types
+        public void lesson2() //Data types
         {
             //For example
             string name = "Tolibjon";
@@ -88,6 +89,66 @@ namespace C__Basic
             */
             // Data_type variableName = value;
         }
+        public void lesson3() //Casting
+        {
 
+        }
+        public void lesson4() //Operators
+        {
+
+        }
+        public void lesson5() //Control statements
+        {
+
+        }
+        public void lesson6() //Loops
+        {
+
+        }
+        public void lesson7() //Methods
+        {
+
+        }
+        public void lesson8() // Strings
+        {
+            /*
+            What is a String this Sum eny chars in one line  
+            For examplr :
+            */
+            char[] name = { 'T', 'o', 'l', 'i', 'b', 'j', 'o', 'n' };
+            string name1 = "Tolibjon";
+            /*
+            String have 2 types one word and eny words
+            For example :
+            */
+            string str1 = "HI";
+            string str2 = "Hello World";
+            /*
+            How to giving value for string
+            For examle :
+            */
+            string massage1 = null;// this is a giving null value
+            string massage2 = " ";// this is a string with empty value
+            string massage3 = System.String.Empty;// this is a giving empty value 
+            string massage4 = new string(" This is new value for this string");// new string
+            /*
+            We sholud pluse some strings
+            For example :
+            */
+            string s1 = "Hello";
+            string s2 = "World";
+            s1 += s2;
+            WriteLine(s1);
+            //Verbatim string literal
+            //string path = "C:Donw\sasda\asda\da\sda";//Error
+            string path1 = @"C:Donw\sasda\asda\da\sda";// Whith literals
+            string World = "Hello";
+            WriteLine($"{World} World");//inerapolation
+            WriteLine("{0} World", World);//composite
+            // String Builder 
+            StringBuilder sb = new StringBuilder("Salom");
+            sb[0] = 'C';
+            WriteLine(sb.ToString());
+        }
     }
 }
